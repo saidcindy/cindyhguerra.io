@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cindy Hernandez - Portfolio</title>
+  <script>
+    function displayResearchIdeas() {
+      var researchIdeas = [
+        "Exploring the potential of blockchain in supply chain management",
+        "Implementing AI algorithms for natural language processing",
+        "Developing responsive web design frameworks for mobile devices",
+        "Building decentralized applications using Ethereum smart contracts"
+      ];
+
+      var ideasList = document.getElementById("research-ideas");
+      ideasList.innerHTML = ""; // Clear previous ideas
+
+      for (var i = 0; i < researchIdeas.length; i++) {
+        var listItem = document.createElement("li");
+        listItem.textContent = researchIdeas[i];
+        ideasList.appendChild(listItem);
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Cindy Hernandez - Web Developer & Web3 Designer</h1>
+  </header>
+  
+  <section id="education">
+    <h2>Education</h2>
+    <p>Cindy Hernandez attended Emory University and was a fellow for the Computation School of Computer Science and Technology Design, Emory School of Law, and Duke School of Law.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p>Here are some coding research ideas Cindy has been exploring:</p>
+    <ul id="research-ideas">
+      <!-- Research ideas will be dynamically populated here -->
+    </ul>
+    <button onclick="displayResearchIdeas()">Show Research Ideas</button>
+  </section>
+
+  <section id="bio">
+    <h2>Bio</h2>
+    <p>Cindy Hernandez is a passionate web developer and Web3 designer with a strong background in computer science and technology design. Her innovative approach to problem-solving and attention to detail allow her to create exceptional digital experiences. With a deep understanding of blockchain technology and its potential applications, Cindy strives to push the boundaries of web development and explore the possibilities of decentralized systems. Her work reflects a perfect blend of creativity and technical expertise, delivering seamless and user-friendly solutions for a variety of clients.</p>
+  </section>
+</body>
+</html>
